@@ -391,11 +391,18 @@ footer {
 
 // Bootstrap Overrides
 
+// .bg-primary {
+//     background: @theme-primary;
+//     background: -webkit-linear-gradient(@theme-primary , darken(@theme-primary, 5%));
+//     background: linear-gradient(@theme-primary , darken(@theme-primary, 5%));
+// }
+
 .bg-primary {
-    background: @theme-primary;
-    background: -webkit-linear-gradient(@theme-primary , darken(@theme-primary, 5%));
-    background: linear-gradient(@theme-primary , darken(@theme-primary, 5%));
+    background: @design-process;
+    background: -webkit-linear-gradient(@design-process , darken(@design-process, 15%));
+    background: linear-gradient(@design-process, darken(@design-process, 15%));
 }
+
 
 .text-primary {
     color: @theme-primary;
@@ -457,4 +464,10 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @gray-darker;
+}
+
+img.lo-fi{
+  width: 50% !important;
+  // heigth: auto;
+  display: inline-block !important;
 }

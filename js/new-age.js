@@ -26,6 +26,16 @@
         offset: {
             top: 50
         }
-    })
+    });
+
+    //intialize owl carousel
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        center: true,
+        autoWidth: true,
+        loop: true,
+        nav: true
+    });
+
 
 })(jQuery); // End of use strict

@@ -393,9 +393,9 @@ footer ul li a.active {
   text-decoration: none;
 }
 .bg-primary {
-  background: #fdcc52;
-  background: -webkit-linear-gradient(#fdcc52, #fdc539);
-  background: linear-gradient(#fdcc52, #fdc539);
+  background: rgba(255, 149, 102, 0.9);
+  background: -webkit-linear-gradient(rgba(255, 149, 102, 0.9), rgba(255, 96, 25, 0.9));
+  background: linear-gradient(rgba(255, 149, 102, 0.9), rgba(255, 96, 25, 0.9));
 }
 .text-primary {
   color: #fdcc52;
@@ -447,4 +447,8 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+img.lo-fi {
+  width: 50% !important;
+  display: inline-block !important;
 }

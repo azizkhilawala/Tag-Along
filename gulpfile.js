@@ -8,7 +8,7 @@ var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 var imagemin = require('gulp-imagemin');
 
-// Set the banner content
+// // Set the banner content
 var banner = ['/*!\n',
     ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
     ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
@@ -42,7 +42,7 @@ gulp.task('minify-css', ['less'], function() {
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
             stream: true
-        }))
+        }));
 });
 
 // Minify JS

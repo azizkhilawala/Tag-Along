@@ -9,13 +9,13 @@ var pkg = require('./package.json');
 var imagemin = require('gulp-imagemin');
 
 // // Set the banner content
-// var banner = ['/*!\n',
-//     ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-//     ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-//     ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
-//     ' */\n',
-//     ''
-// ].join('');
+var banner = ['/*!\n',
+    ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
+    ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
+    ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
+    ' */\n',
+    ''
+].join('');
 
 // Compile LESS files from /less into /css
 gulp.task('less', function() {
